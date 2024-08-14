@@ -1,0 +1,2 @@
+bToPlay_rom.v,verilog,xil_defaultlib,../../../../../../../chess_ip_repo/hdmi_piece_controller_1_0/src/bToPlay_rom/sim/bToPlay_rom.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

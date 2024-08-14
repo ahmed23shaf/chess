@@ -1,0 +1,500 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Apr 30 09:07:32 2024
+| Host         : DESKTOP-V0B29NK running 64-bit major release  (build 9200)
+| Command      : report_drc -file chess_top_drc_opted.rpt -pb chess_top_drc_opted.pb -rpx chess_top_drc_opted.rpx
+| Design       : chess_top
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 91
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| DPIP-1   | Warning  | Input pipelining                                    | 90         |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/bCheckmate/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/bCheckmate/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/bK/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/bK/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/bK/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/bK/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/bQ/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/bQ/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/bQ/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/bQ/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/bToPlay/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/bToPlay/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/chess_board/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/chess_board/rom_address/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/chess_board/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/chess_board/rom_address/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/chess_board/rom_address2 input mb_usb_i/hdmi_piece_controller_0/inst/paint/chess_board/rom_address2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__1 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__1 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1__0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1__0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__2 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__2 input mb_usb_i/hdmi_piece_controller_0/inst/paint/cursor_on1__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/drawStale/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/drawStale/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[0].bPromote/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[0].bPromote/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[0].bPromote/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[0].bPromote/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[7].bPromote/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[7].bPromote/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[7].bPromote/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk10[7].bPromote/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[0].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[0].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[0].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[0].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[1].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[1].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[1].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[1].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[2].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[2].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[2].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[2].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[3].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[3].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[3].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[3].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[4].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[4].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[4].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[4].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[5].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[5].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[5].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[5].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[6].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[6].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[6].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[6].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[7].wP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[7].wP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[7].wP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk1[7].wP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[0].wR/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[0].wR/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#44 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[0].wR/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[0].wR/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#45 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[1].wR/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[1].wR/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#46 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[1].wR/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk2[1].wR/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#47 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[0].wN/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[0].wN/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#48 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[0].wN/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[0].wN/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#49 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[1].wN/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[1].wN/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#50 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[1].wN/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk3[1].wN/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#51 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[0].wB/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[0].wB/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#52 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[0].wB/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[0].wB/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#53 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[1].wB/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[1].wB/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#54 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[1].wB/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk4[1].wB/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#55 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[0].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[0].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#56 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[0].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[0].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#57 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[1].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[1].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#58 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[1].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[1].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#59 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[2].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[2].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#60 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[2].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[2].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#61 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[3].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[3].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#62 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[3].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[3].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#63 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[4].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[4].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#64 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[4].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[4].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#65 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[5].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[5].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#66 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[5].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[5].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#67 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[6].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[6].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#68 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[6].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[6].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#69 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[7].bP/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[7].bP/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#70 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[7].bP/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk5[7].bP/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#71 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[0].bR/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[0].bR/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#72 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[0].bR/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[0].bR/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#73 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[1].bR/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[1].bR/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#74 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[1].bR/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk6[1].bR/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#75 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[0].bN/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[0].bN/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#76 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[0].bN/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[0].bN/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#77 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[1].bN/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[1].bN/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#78 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[1].bN/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk7[1].bN/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#79 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[0].bB/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[0].bB/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#80 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[0].bB/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[0].bB/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#81 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[1].bB/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[1].bB/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#82 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[1].bB/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk8[1].bB/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#83 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk9[4].wPromote/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk9[4].wPromote/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#84 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk9[4].wPromote/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/genblk9[4].wPromote/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#85 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/wCheckmate/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/wCheckmate/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#86 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/wK/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/wK/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#87 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/wK/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/wK/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#88 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/wQ/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/wQ/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#89 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/wQ/rom_address0 input mb_usb_i/hdmi_piece_controller_0/inst/paint/wQ/rom_address0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#90 Warning
+Input pipelining  
+DSP mb_usb_i/hdmi_piece_controller_0/inst/paint/wToPlay/rom_address input mb_usb_i/hdmi_piece_controller_0/inst/paint/wToPlay/rom_address/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+

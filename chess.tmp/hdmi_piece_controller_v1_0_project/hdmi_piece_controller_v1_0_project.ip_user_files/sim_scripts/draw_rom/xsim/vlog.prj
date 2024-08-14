@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../../../../chess_ip_repo/hdmi_piece_controller_1_0/src/draw_rom/sim/draw_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
